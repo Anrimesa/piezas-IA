@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Xegmenta Digital Signage Template D01</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+    /* Define the glow animation */
+    @keyframes glow {
+        from {
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.5); /* Start with a smaller shadow */
+        }
+        to {
+            box-shadow: 1 2 500px rgba(201, 32, 32, 0.5); /* End with a larger shadow */
+        }
+    }
+   </style>
+
+</head>
+
+<body>
+
+    <script>
+        // Set this variable to true or false to control the visibility of the button
+        var editButtonVisible = false;
+        // Set this variable to true or false to control the visibility of the div
+        var statusMonitorVisible = false;
+    </script>
+
+    <button id="editButton" style="display:none; z-index: 100;">Edit Config</button>
+    <script>
+        var editButton = document.getElementById('editButton');
+        if (editButtonVisible) {
+          editButton.style.display = 'block';
+        } else {
+          editButton.style.display = 'none';
+        }
+    </script>
+
+    <div id="myModal" class="modal">
+    </div>
+
+    <div id="statusMonitor" class="monitorPanel"></div>
+    <script>        
+        var monitorDiv = document.getElementById('statusMonitor');
+        if (statusMonitorVisible) {
+          monitorDiv.style.display = 'block';
+        } else {
+          monitorDiv.style.display = 'none';
+        }
+    </script>
+
+
+    <div id="treeModal" class="modal" style="border: 2px solid blue; top: 10px; left: 10px; z-index: 2">
+        <div class="modal-content">
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="mainContainer"></div>
+        <div id="localTime"></div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery.jplayer.min.js"></script>
+
+    <script src="config.js"></script>
+    <script src="logic.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

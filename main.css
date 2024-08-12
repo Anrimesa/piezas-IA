@@ -1,0 +1,295 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 30px/1.8 "Lato", sans-serif;
+    color: blue;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.monitorPanel {
+    display: block;
+    position: fixed;
+    left: 150px;
+    top: 175px;
+    height: 350px;
+    width: 427px;
+    font-size: 15px;
+    font-family: Arial;
+    margin-left: 10px;
+    padding-left: 10px;
+    color: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+}
+
+/* Style for the monitor table */
+
+.monitor-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .monitor-table td {
+    border: 0px solid #dddddd;
+    text-align: left;
+    padding: 0px;
+    padding-left: 20px;
+    font-family: Courier, monospace; /* Applying Courier font */
+  }
+  
+  .monitor-table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 0px;
+    background-color: #f2f2f2;
+  }
+  
+  .monitor-table tr:nth-child(even) {
+    /* background-color: #b25757; */
+  }
+  
+  .monitor-table tr:hover {
+    background-color: #f1f1f165;
+  }
+  
+  /* Applying font size to variable names */
+  .monitor-table td:first-child {
+    font-size: 12px;
+    width: 150px;
+  }
+  
+  .monitor-table td:nth-child(2) {
+    font-size: 12px;
+  }
+
+/* Style the button */
+
+#editButton {
+    position: absolute;
+    left: 20px; /* Default left position */
+    top: 20px; /* Default top position */
+    background-color: blue;
+    color: white;
+  }
+  
+.treeModal-title-bar {
+  background-color: #008080; /* Windows 2000 title bar color */
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  cursor: move; /* Add move cursor for draggable effect */
+  font-size: 14px;
+  }
+
+  .treeModal-close-button {
+  color: white;
+  background-color: #ff0000; /* Windows 2000 close button color */
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  }
+
+  .treeModal {
+  border: 2px solid #008080; /* Windows 2000 window border color */
+  background-color: #f0f0f0; /* Windows 2000 window background color */
+  width: 300px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  }
+
+  .treeModal ul li {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    color: black;
+  }
+
+  .treeModal-header {
+background-color: #008080; /* Windows 2000 title bar color */
+color: white;
+padding: 5px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#collapse-all-button, #refresh-button {
+  background-color: #008080; /* Windows 2000 title bar color */
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+#collapse-all-button {
+  margin-right: 5px;
+}
+
+  /* Style the modal */
+  .modal {
+    display: none; /* Hide the modal by default */
+    position: absolute;
+    /* left: 59%;
+    top: 2%; */
+    /*
+    left: 1400px;
+    top: 50px;
+    */
+    left: 50px;
+    top: 1100px;
+    z-index: 10;
+    width: 700px;
+    height: 1500;
+    overflow: auto;
+    border: 5px solid #ccc;
+    background-color: #333333;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+  }
+  
+  .title-bar {
+    cursor: move;
+  }
+
+  /* Modal content */
+  /*.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 1px;
+    border: 1px solid #888;
+    width: 550px;
+  }*/
+  
+  /* Close button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Styling for temperature container */
+.widget-temp-container {
+    display: flex; /* Horizontal layout */
+    align-items: center; /* Center items vertically */
+    border: 0px solid #ccc;
+}
+
+#localTime {
+    font-size: 36px;
+    color: #333;
+}
+
+.mainContainer,
+.weather-location,
+.weather-temperature,
+.weather-condition,
+.weather-time,
+.weather-date,
+.widget-humidity,
+.widget-sunrise-sunset,
+.weather-mode {
+    color: white;
+    border: 0px solid #ccc;
+}
+
+/* Styling for the weather widget container */
+.mainContainer {
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column;
+    align-items: center; /* Center elements vertically */
+}
+  
+/* Styling for the location */
+.weather-location {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+  
+/* Styling for temperature */
+.weather-temperature {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+  
+/* Styling for condition text */
+.weather-condition {
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+  
+/* Styling for date and time */
+.weather-time {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+  
+/* Styling for humidity */
+.widget-humidity {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+  
+/* Styling for sunrise and sunset */
+.widget-sunrise {
+    font-size: 12px; /* Smaller font size for sunrise and sunset */
+    margin-bottom: 6px;
+}
+
+.widget-sunset {
+    font-size: 12px; /* Smaller font size for sunrise and sunset */
+    margin-bottom: 6px;
+}
+
+/* Styling for the weather icon */
+.weather-icon {
+    margin-right: 10px; /* Create space between icon and temperature */
+}
+
+.weather-mode {
+    margin-right: 10px; /* Create space between icon and temperature */
+}
+
+.weather-title {
+    border-radius: 20px/20px; /* Creates an oval shape with cylindrical appearance */
+    /* color: darkblue; */
+    /* padding: 20px; */
+}
+
+.weather-logo {
+    margin-right: 10px; /* Create space between icon and temperature */
+}
+
+.weather-object {
+  left: "50%";
+  top: "50%";
+  height: "95px";
+  width: "250px";
+  font-size: "55px";
+  font-family: "Arial";
+  color: "black";
+  background-color: 'white';
+  border: "0px solid #ccc";
+  text: "New objeto";
+  zIndex: "1";
+}

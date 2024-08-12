@@ -1,0 +1,106 @@
+{
+    "customers_data": [
+        {
+            "customer_id": 0,
+            "customer_name": "Microplast",
+            "players": [
+                {
+                    "id": "da281e0f3902f3afcc22bc605ef6ee76",
+                    "displayName": "Oficina_H",
+                    "city_api": "oslo",
+                    "city_print": "Medellín Oslo",
+                    "place": "Planta"
+                },
+                {
+                    "id": "c57c5270c6b932dbc47efc45386696a5",
+                    "displayName": "Oficina_H",
+                    "city_api": "oslo",
+                    "city_print": "Oslo",
+                    "place": "Planta"
+                },
+                {
+                    "id": "ajskdljalksjdlkas",
+                    "displayName": "Oficina_H",
+                    "city_api": "oslo",
+                    "city_print": "Oslo",
+                    "place": "Planta"
+                },
+            ]
+        }
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "template_info": [	
+        {
+            "code":"10",
+            "name":"Soleado",
+            "codes":[1000]
+        },
+        {
+            "code":"20",
+            "name":"Soleado con nubes",
+            "codes":[1003]
+        },
+        {
+            "code":"30",
+            "name":"Día y poco nublado",
+            "codes":[1006, 1009, 1030, 1117, 1135, 1147]
+        },
+        {
+            "code":"40",
+            "name":"Día y lluvias ligeras",
+            "codes":[1063, 1066, 1069, 1072, 1150, 1153, 1168, 1186, 1189, 1198, 1201, 1204, 1207, 1210, 1213, 1216, 1219, 1240, 1249, 1255, 1261, 1273]
+        },
+        {
+            "code":"50",
+            "name":"Día y lluvia",
+            "codes":[1087, 1114, 1171, 1180, 1183, 1192, 1195, 1222, 1225, 1243, 1246, 1252, 1258, 1264, 1276, 1279, 1282]
+        },
+        {
+            "code":"60",
+            "name":"Granizo",
+            "codes":[1237]
+        },
+        {
+            "code":"70",
+            "name":"Noche nublado",
+            "codes":[11003, 11006]
+        },
+        {
+            "code":"80",
+            "name":"Noche muy nublado",
+            "codes":[11009, 11030, 11117, 11135, 11147]
+        },
+        {
+            "code":"90",
+            "name":"Noche con lluvia ligera",
+            "codes":[11063, 11066, 11069, 11072, 11114, 11150, 11153, 11183, 11186, 11189, 11204, 11210, 11213, 11216, 11219, 11255, 11261, 11273, 11279, 11282]
+        },
+        {
+            "code":"100",
+            "name":"Noche con lluvia",
+            "codes":[11087, 11171, 11180, 11192, 11195, 11198, 11201, 11207, 11252, 11258, 11264, 11276]
+        },
+        {
+            "code":"110",
+            "name":"Noche despejada",
+            "codes":[11000]
+        }
+    ]
+}

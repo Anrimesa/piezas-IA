@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal with Tree</title>
+  <style>
+    .title-bar {
+    background-color: #008080; /* Windows 2000 title bar color */
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    cursor: move; /* Add move cursor for draggable effect */
+    }
+
+    .close-button {
+    color: white;
+    background-color: #ff0000; /* Windows 2000 close button color */
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    }
+
+    .modal {
+    border: 2px solid #008080; /* Windows 2000 window border color */
+    background-color: #f0f0f0; /* Windows 2000 window background color */
+    width: 300px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    }
+
+    .modal-header {
+  background-color: #008080; /* Windows 2000 title bar color */
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#collapse-all-button, #refresh-button {
+  background-color: #008080; /* Windows 2000 title bar color */
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+#collapse-all-button {
+  margin-right: 5px;
+}
+</style>
+</head>
+<body>
+    <script src="config.js"></script>
+    <script src="lab.js"></script>
+</body>
+</html>
